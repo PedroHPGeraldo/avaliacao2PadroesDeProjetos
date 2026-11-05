@@ -12,16 +12,16 @@ public class Main {
         produto.adicionarObservador(auditoria);
 
         System.out.println("Monitor de Estoque");
-        alterar(produto, 4); // Compras e Auditoria.
-        alterar(produto, 0); // Compras e Auditoria.
-        alterar(produto, 0); // Ninguem: quantidade nao mudou.
-        alterar(produto, 10); // Vendas e Auditoria.
+        alterar(produto, 4); 
+        alterar(produto, 0); 
+        alterar(produto, 0); 
+        alterar(produto, 10); 
 
         System.out.println("Removendo a area de Auditoria");
         produto.removerObservador(auditoria);
-        alterar(produto, 2); // Compras; Auditoria nao recebe mais.
+        alterar(produto, 2); 
         alterar(produto, 0);
-        alterar(produto, 6); // Vendas; Auditoria nao recebe mais.
+        alterar(produto, 6); 
     }
 
     private static void alterar(Produto produto, int novaQuantidade) {
